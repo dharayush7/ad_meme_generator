@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="row">
             {
                 memes.map((meme) => (
-                    <MemeCard value={meme}/>
+                    <MemeCard value={meme} key={meme.id}/>
                 ))
             }
         </div>
